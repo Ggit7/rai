@@ -5,6 +5,7 @@ import ConfettiEffect from './Component/ConfettiEffect';
 import MusicButton from './Component/MusicButton';
 import './App.css';
 import Card from './Component/MessageCard';
+import AudioMessageButton from './Component/MessageButton';
 
 function App() {
   return (
@@ -15,7 +16,11 @@ function App() {
       <br/>
       <br/>
       {/* <MessageBoard /> */}
+      <p>Click blox bellow</p>
       <Card/>
+      <br/>
+      <br/>
+      <AudioMessageButton/>
     </div>
   );
 }

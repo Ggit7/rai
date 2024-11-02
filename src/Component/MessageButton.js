@@ -1,8 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
-import birthdaySong from '../Component/birthdaySong.mp3';
-
-const MusicPlayer = () => {
-  const audioRef = useRef(new Audio(birthdaySong));
+import message from '../Component/message.mp3'; // Adjust the path as necessary
+const AudioMessageButton = () => {
+  const audioRef = useRef(new Audio(message));
   const [isPlaying, setIsPlaying] = useState(false);
 
   const togglePlay = () => {
@@ -21,9 +20,9 @@ const MusicPlayer = () => {
 
   useEffect(() => {
     const audio = audioRef.current;
-    audio.loop = true; // Set the audio to loop indefinitely
+    audio.loop = true; // Loop the audio indefinitely
 
-    // Cleanup: pause and reset audio when component unmounts
+    // Cleanup: pause and reset audio when the component unmounts
     return () => {
       audio.pause();
       audio.currentTime = 0;
@@ -32,11 +31,12 @@ const MusicPlayer = () => {
 
   return (
     <div>
-      <button onClick={togglePlay}>
-        {isPlaying ? 'Stop Music' : 'Play Birthday Song'}
+      <button onClick={togglePlay} style={{color:'red', }}>
+        {isPlaying ? 'Stop Message' : 'Play Birthday Message'}
       </button>
+      <p>{isPlaying ? "I LOVE YOU DIVAI.!" : "Click to play MY WORD."}</p>
     </div>
   );
 };
 
-export default MusicPlayer;
+export default AudioMessageButton;

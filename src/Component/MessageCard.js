@@ -4,24 +4,24 @@ import './Card.css';
 const Card = () => {
   const cardsData = [
     {
-      message: "Happy Birthday! 🎉",
+      message: "Happy Birthday my lovely divai.... 🎉",
       image: "../1.jpg" // Replace with your image URL
     },
     {
-      message: "Wishing you all the best! 🎂",
+      message: "Wishing you all the best... 🎂",
       image: "../2.jpg" // Replace with your image URL
     },
     {
-      message: "Enjoy your special day! 🎈",
+      message: "On this wonderful day, take time to reflect on all the blessings you’ve received divai.! 🎈",
       image: "../3.jpg" // Replace with your image URL
     },
     {
      
-      message: "Make a wish! 🌟",
+      message: " Divai! Your smile lights up my life, and I’m so grateful to have you by my side. Here’s to celebrating you today and always! 🌟",
       image: "../4.jpg" // Replace with your image URL
     },
     {
-      message: "Make a wish! 🌟",
+      message: "To my dearest Divai, on your birthday, I want you to know that my love for you grows stronger with each passing year.,...! 🌟",
       image: "../5.jpg" // Replace with your image URL
     },
   ];
