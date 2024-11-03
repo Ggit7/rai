@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import message from '../Component/message.mp3'; // Adjust the path as necessary
+import message from '../Component/message .mp3'; // Adjust the path as necessary
 const AudioMessageButton = () => {
   const audioRef = useRef(new Audio(message));
   const [isPlaying, setIsPlaying] = useState(false);
@@ -34,7 +34,7 @@ const AudioMessageButton = () => {
       <button onClick={togglePlay} style={{color:'red', }}>
         {isPlaying ? 'Stop Message' : 'Play Birthday Message'}
       </button>
-      <p>{isPlaying ? "I LOVE YOU DIVAI.!" : "Click to play MY WORD."}</p>
+      <p>{isPlaying ? "LOVE YOU RAI.!" : "Click to play MY WORD."}</p>
     </div>
   );
 };

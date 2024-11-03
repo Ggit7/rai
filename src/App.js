@@ -16,7 +16,7 @@ function App() {
       <br/>
       <br/>
       {/* <MessageBoard /> */}
-      <p>Click blox bellow</p>
+      <p>Click box bellow</p>
       <Card/>
       <br/>
       <br/>
